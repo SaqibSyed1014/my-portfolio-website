@@ -3,3 +3,16 @@
     width: 300px;
   }
 }
+
+footer .footer-heading{
+  font-size: calc(7.143vw + 1.071rem);
+  line-height: calc(7.143vw + 1.071rem);
+  text-transform: uppercase;
+  width: 9ch;
+}
+footer .social-links a{
+  font-size: clamp(.875rem,.893vw + .696rem,1.5rem);
+  line-height: clamp(.875rem,.893vw + .696rem,1.5rem);
+  text-decoration: none;
+  text-transform: uppercase;
+}
