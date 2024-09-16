@@ -14,9 +14,9 @@ const Footer = () => {
                       <h2 className="footer-heading">Lets connect</h2>
                       <BaseButton type="button" label="Get in touch" showDot={true}/>
                   </div>
-                  <ul className="social-links flex gap-2">
-                      <li><a href="">GITHUB</a></li>
-                      <li><a href="">Upwork</a></li>
+                  <ul className="social-links flex gap-6">
+                      <li><a href="https://github.com/saqibsyed1014" target="_blank">GITHUB</a></li>
+                      <li><a href="https://www.upwork.com/freelancers/uidevelopment" target="_blank">Upwork</a></li>
                   </ul>
               </div>
           </div>

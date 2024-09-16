@@ -10,7 +10,12 @@ function Navbar() {
           <h2 className="mix-blend-difference absolute z-[999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-light-grey text-2xl font-medium">
               Saqib Syed
           </h2>
-          <BaseButton type="button" label="Hire Me" showDot={true} />
+          <BaseButton
+              type="link"
+              link="https://www.upwork.com/freelancers/uidevelopment"
+              label="Hire Me"
+              showDot={true}
+          />
       </nav>
     </header>
   );
