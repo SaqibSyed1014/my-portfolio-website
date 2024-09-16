@@ -21,7 +21,7 @@ const WorkPortfolio = () => {
                 trigger: '.portfolio-section',
                 start: 'top top',
                 end: 'bottom top',
-                scrub: 1,
+                scrub: true,
                 pin: true,
                 pinSpacing: true
             }
@@ -31,6 +31,7 @@ const WorkPortfolio = () => {
             opacity: .4,
             duration: 6
         });
+        tl2.to('.developer-name', { color: '#d6d6d6', duration: 2 }, '<')
         gsap.utils.toArray(".project-info").forEach((project, index) => {
             tl2.fromTo(`.project-info-${index+1}`, {
                 translateY: '70vh',
@@ -45,11 +46,11 @@ const WorkPortfolio = () => {
                 rotateX: '0deg',
                 scale: 1,
                 filter: 'blur(0px)',
-                duration: 7
+                duration: 15
             }, '<')
             tl2.fromTo(`.detail-row-${index+1}`, { translateY: 50 }, { translateY: 0, duration: 7 }, '<')
             tl2.to(`.line-${index+1}`, { width: 35, backgroundColor: '#fff', duration: 5 }, '<')
-            tl2.fromTo(`.project-title-${index+1}`, { yPercent: 100 }, { yPercent: -100, duration: 5, delay: 2 })
+            tl2.fromTo(`.project-title-${index+1}`, { yPercent: 100 }, { yPercent: -100, duration: 10, delay: 2 })
             tl2.to(`.project-info-${index+1}`,{
                 translateY: '-70vh',
                 translateZ: '25vw',
@@ -57,7 +58,7 @@ const WorkPortfolio = () => {
                 scaleY: 1,
                 transformStyle: 'preserve-3d',
                 filter: 'blur(5px)',
-                duration: 7
+                duration: 15
             })
             tl2.to(`.detail-row-${index+1}`, { translateY: -50, duration: 7 }, '<')
             tl2.to(`.indicator-line`, { width: 16, backgroundColor: '#6B7280', duration: 5 }, '<')
@@ -87,7 +88,6 @@ const WorkPortfolio = () => {
             const transformVal = card.style.transform;
             const translateYMatch = transformVal.match(/translate3d\(0px, ([^ ,]+)vh, .*\)/);
             const translateY = parseFloat(translateYMatch[1]);
-            console.log('code ', translateY)
             if (translateY !== null && translateY > -30 && translateY < 30) {  //&& translateY > -15 && translateY < 15
                 card.classList.add('show-flow-line');
                 const projectLinkBtn = document.querySelector('.project-link');
@@ -111,9 +111,9 @@ const WorkPortfolio = () => {
         })
     }
   return (
-      <section className="portfolio-section bg-soft-black">
-          <div className="pinned h-screen flex justify-center items-center mix-blend-difference overflow-hidden absolute top-0 bottom-0 left-0 right-0">
-              <h2 className="invisible">Work</h2>
+      <section className="portfolio-section bg-soft-black max-sm:overflow-hidden">
+          <div className="pinned h-screen flex justify-center items-center mix-blend-difference overflow-hidden absolute top-0 bottom-0 left-0 right-0 max-md:w-[85%] mx-auto">
+              <h2 className="invisible absolute">Work</h2>
               <div className="work-text relative mix-blend-difference w-[720px]">
                   <svg fill="#d6d6d6" viewBox="0 0 747.7 184.56">
                       <path

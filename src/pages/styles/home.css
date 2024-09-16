@@ -37,31 +37,21 @@ footer .social-links a:hover::before {
 }
 
 .project-details-bar{
-    @apply absolute bottom-5 right-4 left-4 text-inverted-soft-black overflow-hidden h-[30px] text-xl;
+    @apply absolute bottom-5 right-4 left-4 text-inverted-soft-black overflow-hidden h-[30px] text-2xl lg:text-xl;
 }
 .project-detail-row{
     @apply flex justify-between items-center absolute left-0 right-0 px-5;
 }
 .card-3d-effect{
-    max-width: 35vw;
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    @apply max-w-[80vw] lg:max-w-[45vw] w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center mx-auto;
     perspective: 100vw;
 }
 .project-info{
-    @apply relative z-10 rounded-3xl p-[.2rem] overflow-hidden cursor-pointer transition-all;
+    @apply relative z-10 rounded-3xl p-[.2rem] overflow-hidden cursor-pointer;
     perspective-origin: 50%;
 }
 .titled-card{
-  @apply rounded-3xl overflow-hidden p-0 w-full
+  @apply rounded-2xl lg:rounded-3xl overflow-hidden p-0 w-full
 }
 .titled-card img{
     @apply w-full h-full object-cover;
@@ -70,9 +60,8 @@ footer .social-links a:hover::before {
     @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-auto mix-blend-difference
 }
 .project-title{
-  @apply text-inverted-soft-black uppercase text-[7rem] z-20 font-semibold
+  @apply text-inverted-soft-black uppercase text-6xl md:text-9xl lg:text-[7rem] z-20 font-semibold
 }
-
 .project-info.show-flow-line{
     @apply before:opacity-100 after:opacity-100
 }
