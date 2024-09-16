@@ -16,3 +16,101 @@ footer .social-links a{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.card-3d-effect{
+    max-width: 35vw;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 100vw;
+}
+.project-info{
+    @apply relative z-10 rounded-3xl p-[.2rem] overflow-hidden cursor-pointer transition-all;
+    perspective-origin: 50%;
+}
+.titled-card{
+  @apply rounded-3xl overflow-hidden p-0 w-full
+}
+.titled-card img{
+    @apply w-full h-full object-cover;
+}
+.project-title-wrap{
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-auto mix-blend-difference
+}
+.project-title{
+  @apply text-inverted-soft-black uppercase text-[7rem] z-20 font-semibold
+}
+
+.project-info.show-flow-line{
+    @apply before:opacity-100 after:opacity-100
+}
+.project-info::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(transparent, #fff, transparent 10%);
+    animation: rotate 8s linear infinite;
+}
+.project-info::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #000;
+    border-radius: 24px;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.project-link{
+    @apply absolute pointer-events-none;
+}
+.project-link.mouse-entered{
+    @apply animate-[scaledUp_.2s_ease-in-out]
+}
+.project-link.mouse-left{
+    @apply animate-[scaledDown_.2s_ease-in-out_forwards];
+}
+
+@keyframes scaledUp {
+    0% {
+        transform: scale(.4);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes scaledDown {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(.4);
+        opacity: 0;
+    }
+}

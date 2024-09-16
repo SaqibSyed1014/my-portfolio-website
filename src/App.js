@@ -9,12 +9,14 @@ import Portfolio from "./pages/portfolio";
 import Feedback from "./pages/feedback";
 import Contact from "./pages/contact";
 import NoPage from "./pages/nopage";
+import { ReactLenis, useLenis } from 'lenis/react'
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
 
   return (
     <>
+      <ReactLenis root>
       <BrowserRouter>
         <Routes>
           <Route index element={<Homepage />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </BrowserRouter>
+      </ReactLenis>
     </>
   );
 }
