@@ -1,9 +1,3 @@
-@media (min-width: 350px) {
-  .myImg {
-    width: 300px;
-  }
-}
-
 footer .footer-heading{
   font-size: calc(7.143vw + 1.071rem);
   line-height: calc(7.143vw + 1.071rem);

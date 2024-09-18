@@ -17,16 +17,16 @@ function App() {
   return (
     <>
       <ReactLenis root>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Homepage />} />
-          <Route path="/about" element={<Aboutpage />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/feedback" element={<Feedback />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Homepage />} />
+              <Route path="/about" element={<Aboutpage />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/feedback" element={<Feedback />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+            </Routes>
+          </BrowserRouter>
       </ReactLenis>
     </>
   );

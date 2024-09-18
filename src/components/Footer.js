@@ -23,7 +23,6 @@ const Footer = () => {
           <div className="col-span-12">
               <div className="flex justify-between text-sm">
                   <p> © Saqib Syed</p>
-                  <p>Developed by me</p>
               </div>
           </div>
       </footer>

@@ -17,7 +17,7 @@ const Introduction = () => {
         <>
             <div className="col-span-12 lg:col-span-8 lg:col-start-2 mt-[16vh]">
                 <h1 className="uppercase lg:indent-[2ch] max-lg:font-semibold w-full lg:w-[14ch] text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-inverted-soft-black relative z-10 mix-blend-difference">
-                    a front end developer who loves design
+                    a front end developer who breathes design
                 </h1>
 
                 <div className="flex mt-5">
