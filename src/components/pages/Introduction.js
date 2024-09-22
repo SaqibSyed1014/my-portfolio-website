@@ -2,6 +2,7 @@ import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import BaseButton from "../BaseButton";
 import React from "react";
+import {Link} from "react-router-dom";
 
 const Introduction = () => {
     useGSAP(() => {
@@ -29,6 +30,9 @@ const Introduction = () => {
                         classes="md:hidden"
                     />
                 </div>
+                <Link to="portfolio">
+                    <BaseButton type="button" label="View my work" showDot={false} />
+                </Link>
             </div>
 
             <div id="profileImage" className="rounded-2xl md:rounded-[30px] lg:rounded-[48px] overflow-hidden mt-36 md:mt-28 lg:absolute lg:top-[36vh] lg:right-0 col-span-12 lg:col-start-6 w-full lg:w-[64vw] lg:col-span-6 z-0">

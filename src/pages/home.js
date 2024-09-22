@@ -13,7 +13,7 @@ function Homepage() {
         <PagePreloader />
         <main className="relative bg-white z-10">
             <div className="grid grid-cols-12 gap-4 p-6">
-                <Navbar/>
+                <Navbar title="Saqib Syed" />
                 <Introduction/>
             </div>
 
