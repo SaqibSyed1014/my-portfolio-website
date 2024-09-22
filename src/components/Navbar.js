@@ -7,7 +7,7 @@ function Navbar({ title }) {
       <nav className="flex justify-between relative">
           <BaseButton type="button" label="Available Now" showDot={false} showPulse={true} classes="max-md:hidden" />
 
-          <h2 className="developer-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-medium">
+          <h2 className="developer-name absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl sm:text-2xl font-medium">
               {title}
           </h2>
           <BaseButton

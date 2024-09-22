@@ -1,10 +1,11 @@
 import gsap from "gsap";
-import {useGSAP} from "@gsap/react";
+import { useGSAP } from "@gsap/react";
 import BaseButton from "../BaseButton";
 import { projectsList } from "../../core/constants/projects";
-import {useState} from "react";
 
 const WorkPortfolio = () => {
+    const featuredWork = projectsList.filter(project => project.isFeatured);
+
     useGSAP(() => {
         gsap.from('.work-text', {
             scale: 1.5,
@@ -124,7 +125,7 @@ const WorkPortfolio = () => {
 
 
           <div className="flex flex-col h-screen">
-              {projectsList.map((project, index) => {
+              {featuredWork.map((project, index) => {
                   return (
                       <ProjectCardWith3DEffect
                           key={index}
@@ -139,13 +140,13 @@ const WorkPortfolio = () => {
           </div>
 
           <div className="absolute top-0 right-0 bottom-0 w-[50px] flex flex-col justify-center items-end gap-2.5">
-              {projectsList.map((_, index) => {
+              {featuredWork.map((_, index) => {
                   return <div key={index} className={`h-0.5 w-4 bg-gray-500 indicator-line line-${index+1}`}></div>
               })}
           </div>
 
           <div className="project-details-bar">
-              {projectsList.map((project, index) => {
+              {featuredWork.map((project, index) => {
                   return (
                       <div key={index} className={`project-detail-row detail-row-${index+1}`}>
                           <p>{project.year}</p>
