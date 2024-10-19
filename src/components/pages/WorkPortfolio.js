@@ -21,7 +21,7 @@ const WorkPortfolio = () => {
             scrollTrigger: {
                 trigger: '.portfolio-section',
                 start: 'top top',
-                end: 'bottom top',
+                end: '+=1500 top',
                 scrub: true,
                 pin: true,
                 pinSpacing: true
@@ -51,7 +51,7 @@ const WorkPortfolio = () => {
             }, '<')
             tl2.fromTo(`.detail-row-${index+1}`, { translateY: 50 }, { translateY: 0, duration: 7 }, '<')
             tl2.to(`.line-${index+1}`, { width: 35, backgroundColor: '#fff', duration: 5 }, '<')
-            tl2.fromTo(`.project-title-${index+1}`, { yPercent: 100 }, { yPercent: -100, duration: 10, delay: 2 })
+            tl2.fromTo(`.project-title-${index+1}`, { yPercent: 150 }, { yPercent: -150, duration: 10, delay: 2 })
             tl2.to(`.project-info-${index+1}`,{
                 translateY: '-70vh',
                 translateZ: '25vw',

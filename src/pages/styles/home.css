@@ -37,7 +37,7 @@ footer .social-links a:hover::before {
     @apply flex justify-between items-center absolute left-0 right-0 px-5;
 }
 .card-3d-effect{
-    @apply max-w-[80vw] lg:max-w-[45vw] w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center mx-auto;
+    @apply w-[40vw] max-w-[560px] aspect-[1.5/1] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center mx-auto;
     perspective: 100vw;
 }
 .project-info{
