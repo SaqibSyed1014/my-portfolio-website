@@ -67,7 +67,7 @@ function ProjectCard({ project }) {
             {/* Details on Desktop */}
             <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 p-4 text-white opacity-0 group-hover:opacity-100 transition delay-200">
                 <h2 className="text-4xl font-semibold">{project.title}</h2>
-                <p className="text-base mt-0.5 mb-2">{project.category}</p>
+                <p className="text-sm mt-0.5 mb-4">{project.category}</p>
                 {Boolean(project.techStack.length) && <div className="flex items-center gap-2 text-sm">
                     <p>Stack:</p>
                     {project.techStack.map((tech, index) => {

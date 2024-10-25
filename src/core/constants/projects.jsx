@@ -3,6 +3,9 @@ import Vue from '../../assets/icons/vue.svg';
 import React from '../../assets/icons/react.svg';
 import Webflow from '../../assets/icons/webflow.svg';
 import Nuxt from '../../assets/icons/nuxt.svg';
+import Tailwind from '../../assets/icons/tailwind.svg';
+import Flowbite from '../../assets/icons/flowbite.svg';
+import Pinia from '../../assets/icons/pinia.svg';
 
 const techStack = {
     vue: {
@@ -12,6 +15,18 @@ const techStack = {
     react: {
         title: 'Reactjs',
         logo: React
+    },
+    tailwind: {
+        title: 'TailwindCSS',
+        logo: Tailwind
+    },
+    pinia: {
+        title: 'Pinia',
+        logo: Pinia
+    },
+    flowbite: {
+        title: 'Flowbite',
+        logo: Flowbite
     },
     webflow: {
         title: 'Webflow',
@@ -29,36 +44,49 @@ const techStack = {
 
 export const projectsList = [
     {
-        title: 'ARK/8',
-        image: 'https://cdn.dribbble.com/userupload/5052099/file/original-ef38f9c0d4592bfdf3dc0af1c2397e4c.png?resize=400x300&vertical=center',
-        year: 2022,
-        category: 'Ecommerce',
-        isFeatured: true,
-        techStack: [techStack.vue, techStack.gsap, techStack.nuxt, techStack.webflow, techStack.react]
-    },
-    {
-        title: 'ARK',
-        image: 'https://cdn.dribbble.com/userupload/3350329/file/original-0fa1629e3d9558eb3861f06620df8f04.png?resize=400x300&vertical=center',
+        title: 'Manage My Dojo',
+        image: '/images/dojo-cover.png',
         year: 2021,
-        category: 'Web Application',
+        category: 'SaaS',
         isFeatured: true,
-        techStack: []
+        techStack: [techStack.react],
+        link: 'https://app.managemydojo.com/'
     },
     {
-        title: 'AR',
-        image: 'https://www.juulvrasdonk.nl/_next/image?url=%2Fimages%2Fark-8.webp&w=2048&q=75',
+        title: 'Woble',
+        image: '/images/dojo-cover.png',
+        year: 2022,
+        category: 'Social Networking App',
+        isFeatured: true,
+        techStack: [techStack.vue, techStack.tailwind, techStack.pinia],
+        link: 'https://woble.weiswiseapps.com/'
+    },
+    {
+        title: 'Lahebo',
+        image: '/images/lahebo-cover.png',
+        year: 2023,
+        category: 'SaaS',
+        isFeatured: true,
+        techStack: [techStack.vue, techStack.tailwind, techStack.pinia],
+        link: 'http://lahebo.com/'
+    },
+    {
+        title: 'Play Host',
+        image: '/images/playhost-cover.png',
         year: 2024,
         category: 'Landing Page',
         isFeatured: false,
-        techStack: []
+        techStack: [techStack.react, techStack.flowbite],
+        link:'https://play-host.vercel.app/'
     },
     {
-        title: 'AR',
-        image: 'https://www.juulvrasdonk.nl/_next/image?url=%2Fimages%2Fnoape.webp&w=3840&q=75',
+        title: 'Sophiana',
+        image: '/images/sophiana-cover.png',
         year: 2023,
-        category: 'Ecommerce',
-        isFeatured: true,
-        techStack: []
+        category: 'Landing Page',
+        isFeatured: false,
+        techStack: [techStack.react, techStack.tailwind],
+        link: 'https://sophiana-gilt.vercel.app/'
     }
 ];
 

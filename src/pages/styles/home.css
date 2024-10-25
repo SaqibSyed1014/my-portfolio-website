@@ -41,11 +41,11 @@ footer .social-links a:hover::before {
     perspective: 100vw;
 }
 .project-info{
-    @apply relative z-10 rounded-3xl p-[.2rem] overflow-hidden cursor-pointer;
+    @apply relative z-10 h-full w-full rounded-3xl p-[.2rem] overflow-hidden cursor-pointer;
     perspective-origin: 50%;
 }
 .titled-card{
-  @apply rounded-2xl lg:rounded-3xl overflow-hidden p-0 w-full
+  @apply rounded-2xl lg:rounded-3xl overflow-hidden p-0 w-full h-full;
 }
 .titled-card img{
     @apply w-full h-full object-cover;
