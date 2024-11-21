@@ -3,7 +3,7 @@ import BaseButton from "./BaseButton";
 const Footer = () => {
   return (
       <footer className="relative lg:sticky lg:bottom-0 z-[0] grid grid-cols-12 items-stretch gap-4 px-3 py-8 md:p-6">
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
               <div className="footer-image rounded-2xl overflow-hidden max-md:hidden">
                   <img src="/images/my_image.png" alt="Saqib Syed Profile Image" className="h-full" />
               </div>
