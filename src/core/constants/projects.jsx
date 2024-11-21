@@ -44,12 +44,12 @@ const techStack = {
 
 export const projectsList = [
     {
-        title: 'Manage My Dojo',
+        title: 'Dojo',
         image: '/images/dojo-cover.png',
         year: 2021,
         category: 'SaaS',
         isFeatured: true,
-        techStack: [techStack.react],
+        techStack: [techStack.react, techStack.tailwind],
         link: 'https://app.managemydojo.com/'
     },
     {
