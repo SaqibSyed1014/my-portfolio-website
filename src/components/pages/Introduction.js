@@ -36,7 +36,7 @@ const Introduction = () => {
             </div>
 
             <div id="profileImage" className="rounded-2xl md:rounded-[30px] lg:rounded-[48px] overflow-hidden mt-36 md:mt-28 lg:absolute lg:top-[36vh] lg:right-0 col-span-12 lg:col-start-6 w-full lg:w-[64vw] lg:col-span-6 z-0">
-                <img src="https://www.juulvrasdonk.nl/_next/image?url=%2Fimages%2Fprofile.webp&w=1200&q=75" alt=""
+                <img src="/images/my_image.png" alt="Saqib's Profile Picture"
                     className="w-full h-full object-cover"
                 />
             </div>

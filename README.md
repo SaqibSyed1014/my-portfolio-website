@@ -1,25 +1,9 @@
 
-# Reactjs-GSAP (GreenSock Animation Platform)
+# Saqib's Portfolio Website
 
-GSAP (GreenSock Animation Platform) in Reactjs with Tailwind css.
 
-# Getting started
-
-- RUN ``` npm install ```
-
-Package to be installed:
-- ``` react-router-dom ```
-- ``` gsap ```
-
-Packages to be imported:
-- gsap
-- NavLink
-- BrowserRouter
-- Routes
-- Route
-
-GSAP (GreenSock Animation Platform) installation command:
-- ``` npm install gsap ``` or visit "https://gsap.com/"
-
-Tailwind css installation command:
-- ``` npm install -D tailwindcss ``` or visit "https://tailwindcss.com/"
+# Built using:
+- React
+- TailwindCSS 
+- GSAP
+- Lenis
